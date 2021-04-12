@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "coenraads.bracket-pair-colorizer",
+        "batisteo.vscode-django",
+        "bibhasdn.django-html",
+        "kevinrose.vsc-python-indent",
+        "tabnine.tabnine-vscode",
+        "visualstudioexptteam.vscodeintellicode",
+        "hookyqr.beautify",
+        "ms-vsliveshare.vsliveshare",
+        "miguelsolorio.fluent-icons",
+        "vscode-icons-team.vscode-icons"
+    ]
+}
