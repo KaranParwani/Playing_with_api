@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from python_task.views import TestView
+from python_task.views import song_fileView, song_fileUpdate, song_fileDestroy
 from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
@@ -23,7 +23,9 @@ from .router import router_file
 
 urlpatterns = [
     # path('/', include('python_task.urls')),
-    path('', TestView.as_view(), name='test'),
+    path('', song_fileView.as_view(), name='test'),
+    path('delete/<str:pk>', song_fileDestroy.as_view(), name='delete'),
+    path('update/<str:pk>', song_fileUpdate.as_view(), name='update'),
     path('admin/', admin.site.urls),
     path('api/', include(router_file.urls))
 ]
